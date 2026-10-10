@@ -33,7 +33,7 @@ CREATE TABLE CHAIN_OF_CUSTODY (
     transfer_date    TIMESTAMP DEFAULT CURRENT_TIMESTAMP NOT NULL,
     transfer_location VARCHAR2(200),
     purpose          VARCHAR2(200),
-    condition        VARCHAR2(100),
+    evidence_condition VARCHAR2(100),
     remarks          VARCHAR2(300),
     CONSTRAINT fk_cc_evidence FOREIGN KEY (evidence_id)
         REFERENCES EVIDENCE(evidence_id),
